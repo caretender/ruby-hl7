@@ -1,7 +1,7 @@
 # encoding: UTF-8
 class HL7::Message::Segment::ORC < HL7::Message::Segment
   weight 88 # obr.weight-1
-  has_children [:OBR]
+  has_children [:OBR, :RXA]
   add_field :order_control
   add_field :placer_order_number
   add_field :filler_order_number
